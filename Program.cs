@@ -62,6 +62,7 @@ namespace Matrix
             int[,] mas1 = new int[size, size];
             Random rnd = new Random();
 
+            //Вывод матрицы А
             Console.WriteLine("Матрица А");
             for (int i = 0; i < size; i++)
             {
@@ -74,6 +75,7 @@ namespace Matrix
             }
             Console.WriteLine();
 
+            //Вывод матрицы B
             Console.WriteLine("Матрица В");
             int[,] mas2 = new int[size, size];
             for (int i = 0; i < size; i++)
@@ -86,6 +88,7 @@ namespace Matrix
                 if (size < 11) Console.WriteLine();
             }
 
+            //Вывод результата на последовательность
             int[,] res1 = Multiplication1(mas1, mas2);
             if (size < 11)
             {
@@ -98,6 +101,8 @@ namespace Matrix
                     if (size < 11) Console.WriteLine();
                 }
             }
+
+            //Вывод результата на параллельность
             int[,] res2 = Multiplication2(mas1, mas2);
             if (size < 11)
             {
